@@ -9,7 +9,8 @@ module.exports = {
     },
     liberty: {
       url: "https://liberty20.shardeum.org/",
-      accounts:[``]
+      accounts:[``],
+      gasPrice:1000
     },
     sphinx: {
         url: "https://sphinx.shardeum.org/",
@@ -20,5 +21,5 @@ module.exports = {
           accounts: [``]
           }
   },
-  solidity: "0.8.3",
+  solidity: "0.8.4",
 };

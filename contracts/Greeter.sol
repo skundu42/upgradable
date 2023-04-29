@@ -1,5 +1,5 @@
 //SPDX-License-Identifier: Unlicense
-pragma solidity ^0.8.3;
+pragma solidity ^0.8.0;
 
 import "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol";
 
@@ -18,4 +18,3 @@ contract Greeter is OwnableUpgradeable {
         greetings[_msgSender()] = _greeting;
     }
 }
-

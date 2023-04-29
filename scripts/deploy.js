@@ -1,16 +1,10 @@
-
 const { ethers, upgrades } = require("hardhat");
-
 
 async function main() {
   const Greeter = await ethers.getContractFactory("Greeter");
-  const greeter = await upgrades.deployProxy(
-    Greeter, 
-    [], 
-    {
-      initializer: "__Greeter_init",
-    }
-  );
+  const greeter = await upgrades.deployProxy(Greeter, [], {
+    initializer: "__Greeter_init",
+  });
 
   await greeter.deployed();
 

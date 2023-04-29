@@ -19,6 +19,56 @@
       "address": "0x2dB20e41Bb66238B82B0A9A5F411922824243e34",
       "txHash": "0x78bcad46798ff6f258ee4a23980d42381458b1662f502eb1640647e1ee6addf9",
       "kind": "transparent"
+    },
+    {
+      "address": "0x9f813044182c50a8689291F9637802dcaD298a00",
+      "txHash": "0x3a25ea90fcb1ff4dce083f3543716445689a477d8a3077184dd06d10f00ae485",
+      "kind": "transparent"
+    },
+    {
+      "address": "0xabb83987DD6B3CC06e6121F08051Fe913d4f98de",
+      "txHash": "0x928c0b6b00f19dd47272afc8e147234c06c6e90c42d0e3d8c8b9667701a1bb6a",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x920BC087eDfb6cB71B052f345B8ADb0F433D9527",
+      "txHash": "0xaa56961750f8af1ead7fa422814eea92b5f89636d5f082cb7d80eb7590a3d836",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x4B5cF6CCa867146Bcb0BcD25163F39f397105CDC",
+      "txHash": "0x4a6411727c22c3dfb01baa040dd38b495c24cab88a14ac99fa03675b47afbfdd",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x9Bd31410Ed25BaE431e512E09815811A5244FD44",
+      "txHash": "0x1b5da4c6cbfff9021d55dae48cfd14c464c7c82d14836dfe7b3e6f134d9643cc",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x56a09b8B2Cd4375a34688E3D34C518a13EFfb928",
+      "txHash": "0x681ac73d9ea9eccc30fdb2bb23f5bd48a38f4f9982742a4247e5213119ac5a8a",
+      "kind": "transparent"
+    },
+    {
+      "address": "0xD5f77C93b4932FD34e94fBE9753BdFe949e7Ad08",
+      "txHash": "0x8ddaccbfc471b65c5b5956ebc641d532123cf5f4d9d582abfe9c28a5b8958af6",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x8986af5ac4b548D6171bBf35eE8c2C9a96A2B104",
+      "txHash": "0xad6732f3a5624fa4a74167fff9d694d5cf775ef661c4eeb13d95bbfdb03e301f",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x2878e8D253D0a923f64C304F5112480BA4A24D5F",
+      "txHash": "0x18cb2edae98ef333b47f9f65fedfb6ed660c079370abda2192015005bf66355b",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x6206b1100890416022140b7012d944A5754CaA5F",
+      "txHash": "0x628f1e2bf172ff5641bc9fbf232b7ed50d7fb299d5085aa07a1a5c45370348ed",
+      "kind": "transparent"
     }
   ],
   "impls": {
@@ -102,6 +152,202 @@
           "t_string_storage": {
             "label": "string",
             "numberOfBytes": "32"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    },
+    "2a265975ee359a3c0da0938fdfca4c946ddd76821a36c312cd005fcd95a8407a": {
+      "address": "0xE64b8c1328efDa3BC35d358119748dF0C0c3d990",
+      "txHash": "0x5fca642cc4b235ad4187e188da887e3f9b19566e40ebf0ee749e447afc354d6c",
+      "layout": {
+        "solcVersion": "0.8.4",
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:67"
+          },
+          {
+            "label": "isTrustedForwarder",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "ERC2771ContextUpgradeable",
+            "src": "contracts\\ERC2771ContextUpgradeable.sol:17"
+          },
+          {
+            "label": "_owner",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_address",
+            "contract": "OwnableUpgradeable",
+            "src": "contracts\\OwnableUpgradeable.sol:25"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "OwnableUpgradeable",
+            "src": "contracts\\OwnableUpgradeable.sol:97"
+          },
+          {
+            "label": "gasRestrictor",
+            "offset": 0,
+            "slot": "52",
+            "type": "t_contract(GasRestrictor)13277",
+            "contract": "WalletRegistry",
+            "src": "contracts\\WalletRegistry.sol:12"
+          },
+          {
+            "label": "gamification",
+            "offset": 0,
+            "slot": "53",
+            "type": "t_contract(Gamification)13003",
+            "contract": "WalletRegistry",
+            "src": "contracts\\WalletRegistry.sol:13"
+          },
+          {
+            "label": "telegramChatID",
+            "offset": 0,
+            "slot": "54",
+            "type": "t_mapping(t_address,t_string_storage)",
+            "contract": "WalletRegistry",
+            "src": "contracts\\WalletRegistry.sol:16"
+          },
+          {
+            "label": "userWallets",
+            "offset": 0,
+            "slot": "55",
+            "type": "t_mapping(t_address,t_struct(SecondaryWallet)20966_storage)",
+            "contract": "WalletRegistry",
+            "src": "contracts\\WalletRegistry.sol:25"
+          },
+          {
+            "label": "oAuthUserWallets",
+            "offset": 0,
+            "slot": "56",
+            "type": "t_mapping(t_string_memory_ptr,t_struct(SecondaryWallet)20966_storage)",
+            "contract": "WalletRegistry",
+            "src": "contracts\\WalletRegistry.sol:27"
+          },
+          {
+            "label": "getPrimaryFromSecondary",
+            "offset": 0,
+            "slot": "57",
+            "type": "t_mapping(t_address,t_address)",
+            "contract": "WalletRegistry",
+            "src": "contracts\\WalletRegistry.sol:30"
+          },
+          {
+            "label": "noOfWallets",
+            "offset": 0,
+            "slot": "58",
+            "type": "t_uint256",
+            "contract": "WalletRegistry",
+            "src": "contracts\\WalletRegistry.sol:32"
+          },
+          {
+            "label": "whatsAppId",
+            "offset": 0,
+            "slot": "59",
+            "type": "t_mapping(t_address,t_string_storage)",
+            "contract": "WalletRegistry",
+            "src": "contracts\\WalletRegistry.sol:35"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_contract(Gamification)13003": {
+            "label": "contract Gamification",
+            "numberOfBytes": "20"
+          },
+          "t_contract(GasRestrictor)13277": {
+            "label": "contract GasRestrictor",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_address,t_address)": {
+            "label": "mapping(address => address)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_string_storage)": {
+            "label": "mapping(address => string)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_struct(SecondaryWallet)20966_storage)": {
+            "label": "mapping(address => struct WalletRegistry.SecondaryWallet)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_string_memory_ptr,t_struct(SecondaryWallet)20966_storage)": {
+            "label": "mapping(string => struct WalletRegistry.SecondaryWallet)",
+            "numberOfBytes": "32"
+          },
+          "t_string_memory_ptr": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_struct(SecondaryWallet)20966_storage": {
+            "label": "struct WalletRegistry.SecondaryWallet",
+            "members": [
+              {
+                "label": "account",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "encPvtKey",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "publicKey",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "2"
+              }
+            ],
+            "numberOfBytes": "96"
           },
           "t_uint256": {
             "label": "uint256",
